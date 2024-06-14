@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('unc.jpg'); /* Chemin de votre image de fond */
+    background-size: cover; /* Pour ajuster l'image de fond à la taille de la fenêtre */
+    background-position: center; /* Pour centrer l'image de fond */
+   /* font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Ajout d'une couleur de fond */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Ajout d'un fond semi-transparent */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Ajout d'une position relative pour le positionnement du logo */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center; /* Centre les boutons de navigation */
+}
+
+nav button {
+    margin: 0 10px; /* Espacement des boutons */
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3498db; /* Couleur de fond des boutons */
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+nav button:hover {
+    background-color: #2980b9; /* Couleur de fond au survol */
+}
+
+/* Styles pour chaque section de contenu */
+.content-section {
+    padding: 20px; /* Espacement du contenu des sections */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond noire semi-transparente */
+    margin: 20px 0; /* Marge entre les sections */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    color: rgb(22, 53, 45); /* Couleur du texte */
+}
+
+
+form {
+    margin-top: 20px; /* Espacement du formulaire par rapport au contenu */
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold; /* Texte en gras */
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    width: calc(100% - 20px); /* Largeur du champ de saisie */
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 3px; /* Coins arrondis */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Couleur de fond du bouton */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+button:hover {
+    background-color: #27ae60; /* Couleur de fond au survol */
+}
+
+/* Style spécifique pour les champs de saisie */
+form input[type="text"],
+form input[type="date"],
+form input[type="time"] {
+    background-color: #ecf0f1; /* Couleur de fond */
+    border: 1px solid #bdc3c7; /* Bordure */
+    border-radius: 3px; /* Coins arrondis */
+    padding: 8px; /* Espacement intérieur */
+    width: calc(100% - 18px); /* Largeur des champs */
+    margin: 5px 0; /* Marge */
+    box-sizing: border-box; /* Taille incluant la bordure */
+    transition: border-color 0.3s ease; /* Transition fluide pour la bordure */
+}
+
+/* Style spécifique pour les champs de saisie au survol */
+form input[type="text"]:hover,
+form input[type="date"]:hover,
+form input[type="time"]:hover {
+    border-color: #7f8c8d; /* Bordure au survol */
+}
+
+/* Style spécifique pour les champs de saisie lorsqu'ils sont focus */
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="time"]:focus {
+    outline: none; /* Supprime l'outline par défaut */
+    border-color: #3498db; /* Couleur de la bordure lors du focus */
+    box-shadow: 0 0 5px #3498db; /* Ombre lors du focus */
+}
+
+/* Centrage des contenus des balises h1 et h2 */
+header h1,
+.content-section h2 {
+    text-align: center;
+    color: white;
+}
+/* logo pour le site */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+.logo img {
+    width: 100px; /* Taille du logo */
+    height: auto;
+    display: block; /* Permet de gérer la marge automatique */
+}
+.logo1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+/* Centrer les formulaires de réservation */
+form {
+    margin: 0 auto; /* Cette règle centre le formulaire horizontalement */
+    max-width: 400px; /* Optionnel: limitez la largeur du formulaire pour le rendre plus lisible */
+}
+
+/* Changer la couleur du texte en blanc */
+body {
+    color: white;
+}
+
+/* Changer la couleur du texte des attributs des formulaires en blanc */
+form label {
+    color: white;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"] {
+    color: black;
+    /* Ajoutez ici d'autres propriétés CSS nécessaires */
+}
+
+form button {
+    color: white;
+    /* Ajoutez ici d'autres propriétés CSS nécessaires */
+}
+/* Changer la couleur du texte des champs de saisie en noir */
+form input[type="text"],
+form input[type="date"],
+form input[type="time"] {
+    color: black;
+}
+#confirmationMessage{
+    color: greenyellow;
+}
+#reservationList{
+    color: white;
+}
+
+

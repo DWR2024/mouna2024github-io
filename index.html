@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Des ESPACE DE UNC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo1">
+            <img src="unc.png" alt="">
+        </div>
+        <div class="logo">
+            <img src="university_logo.png" alt="Logo de l'université">
+        </div>
+        <h1>GESTION DES ESPACES DE UNC</h1>
+        <nav>
+            <button onclick="showSection('salles')">Gestion des Salles</button>
+            <button onclick="showSection('parkings')">Gestion des Parkings</button>
+            <button onclick="showSection('terrains')">Gestion des Terrains</button>
+            <button onclick="showSection('bureaux')">Gestion des Bureaux</button>
+            <button onclick="showSection('menus')">Gestion des Menus</button>
+            <button onclick="showSection('reservations')">Visualisation des Réservations</button>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil" class="content-section">
+            <h2>Bienvenue AU SITE DE GESTION DES ESPACES DE UNC</h2>
+            <!-- <p>Choisissez une section pour reserver ce que vous voulez:</p> -->
+            <nav>
+                <button onclick="showSection('salles')">Gestion des Salles</button>
+                <button onclick="showSection('parkings')">Gestion des Parkings</button>
+                <button onclick="showSection('terrains')">Gestion des Terrains</button>
+                <button onclick="showSection('bureaux')">Gestion des Bureaux</button>
+                <button onclick="showSection('menus')">Gestion des Menus</button>
+                <button onclick="showSection('reservations')">Visualisation des Réservations</button>
+            </nav>
+        </section>
+
+        <!-- Gestion des Salles -->
+        <section id="salles" class="content-section">
+            <h2>Gérer les Salles</h2>
+            <!-- <p>Créer, mettre à jour, supprimer et consulter les salles.</p> -->
+            <form id="reserverSalleForm"> 
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+                <label for="matricule">Matricule:</label>
+                <input type="text" id="matricule" name="matricule"><br><br>
+                <label for="fonction">Fonction:</label>
+                <input type="text" id="fonction" name="fonction"><br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="heure">Heure:</label>
+                <input type="time" id="heure" name="heure" required><br><br>
+                <label for="heureFin">Heure de fin:</label>
+        <input type="time" id="heureFin" name="heureFin" required><br><br>
+                <label for="typeSalle">Type de Salle:</label>
+                <input type="text" id="typeSalle" name="typeSalle" required><br><br>
+                <label for="nomSalle">Nom de la Salle:</label>
+                <input type="text" id="nomSalle" name="nomSalle" required><br><br>
+                <button type="submit">Réserver</button>
+            </form>
+            <div id="confirmationMessage"></div>
+        </section>
+
+        <!-- Gestion des Parkings -->
+        <section id="parkings" class="content-section">
+            <h2>Gérer les Parkings</h2>
+            <!-- <p>Créer, mettre à jour, supprimer et consulter les parkings.</p> -->
+            <form id="reserverParkingForm">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+                <label for="matricule">Matricule:</label>
+                <input type="text" id="matricule" name="matricule"><br><br>
+                <label for="fonction">Fonction:</label>
+                <input type="text" id="fonction" name="fonction"><br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="heure">Heure:</label>
+                <input type="time" id="heure" name="heure" required><br><br>
+                <label for="heureFin">Heure de fin:</label>
+        <input type="time" id="heureFin" name="heureFin" required><br><br>
+                <button type="submit">Réserver</button>
+            </form>
+            <div id="confirmationMessage"></div>
+        </section>
+
+        <!-- Gestion des Terrains -->
+        <section id="terrains" class="content-section">
+            <h2>Gérer les Terrains</h2>
+            <!-- <p>Créer, mettre à jour, supprimer et consulter les terrains.</p> -->
+            <form id="programmerMatchForm">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+                <label for="matricule">Matricule:</label>
+                <input type="text" id="matricule" name="matricule"><br><br>
+                <label for="fonction">Fonction:</label>
+                <input type="text" id="fonction" name="fonction"><br><br>
+                <label for="dateMatch">Date:</label>
+                <input type="date" id="dateMatch" name="dateMatch" required><br><br>
+                <label for="heureMatch">Heure:</label>
+                <input type="time" id="heureMatch" name="heureMatch" required><br><br>
+                <label for="heureFin">Heure de fin:</label>
+        <input type="time" id="heureFin" name="heureFin" required><br><br>
+                <label for="equipeAdverse">Équipe Adverse:</label>
+                <input type="text" id="equipeAdverse" name="equipeAdverse" required><br><br>
+                <button type="submit">Programmer un Match</button>
+            </form>
+            <div id="confirmationMessage"></div>
+        </section>
+
+        <!-- Gestion des Bureaux -->
+        <section id="bureaux" class="content-section">
+            <h2>Gérer les Bureaux</h2>
+            <!-- <p>Créer, mettre à jour, supprimer et consulter les bureaux.</p> -->
+            <form id="demanderBureauForm">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+                <label for="fonction">Fonction:</label>
+                <input type="text" id="fonction" name="fonction" required><br><br>
+                <button type="submit">Demander un Bureau</button>
+            </form>
+            <div id="confirmationMessage"></div>
+        </section>
+
+        <!-- Gestion des Menus -->
+        <section id="menus" class="content-section">
+            <h2>Gérer les Menus</h2>
+            <!-- <p>Créer, mettre à jour, supprimer et consulter les menus.</p> -->
+            <form id="reserverRepasForm">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+                <label for="matricule">Matricule:</label>
+                <input type="text" id="matricule" name="matricule"><br><br>
+                <label for="fonction">Fonction:</label>
+                <input type="text" id="fonction" name="fonction"><br><br>
+                <label for="dateRepas">Date:</label>
+                <input type="date" id="dateRepas" name="dateRepas" required><br><br>
+                <label for="heureRepas">Heure debut:</label>
+                <input type="time" id="heureRepas" name="heureRepas" required><br><br>
+                <label for="heureFin">Heure de fin:</label>
+        <input type="time" id="heureFin" name="heureFin" required><br><br>
+                <label for="menu">Menu:</label>
+                <input type="text" id="menu" name="menu" required><br><br>
+                <button type="submit">Réserver</button>
+            </form>
+            <div id="confirmationMessage"></div>
+        </section>
+
+        <!-- Visualisation des Réservations -->
+        <section id="reservations" class="content-section">
+            <!-- <h2>Visualisation des Réservations</h2>
+            <p>Consulter les réservations effectuées.</p> -->
+            <div id="reservationList"></div>
+        </section>
+    </main>
+</body>
+</html>
